@@ -1,7 +1,11 @@
 # 월간 개발계획 
 ## 개발 환경 
-- https://start.spring.io/
-
+- https://start.spring.io/ 
+- Project: 
+- Language: 
+- Spring Boot: 
+- Project Metadata: 
+- Dependencies: Spring Web, Lombok
 
 ## 4월 개발계획
 ### 💡1차 개발 계획 
