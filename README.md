@@ -7,6 +7,11 @@ https://start.spring.io/
 - Project Metadata: 
 - Dependencies: Spring Web, Lombok
 
+## `Settings`
+@lombok 사용  
+@Getter, @Setter 열어둔 후 나중에 @Setter 제거  
+
+
 ## `4월 개발계획`
 ### 💡1차 개발 계획 
 - **welcome page 개발(초기 화면 구성)**  
