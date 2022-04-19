@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import * as React from 'react';
+import { BrowserRouter, Route, Routes, Link, NavLink } from "react-router-dom";
 import './App.css';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container'
+import Grid from '@mui/material/Grid';
+import { Checkbox, TextField } from '@mui/material';
+import { FormControlLabel } from '@mui/material';
+import SignIn from './SignIn';
+import SignUp from './SignUp';
+import Home from './Home';
+import NotFound from './NotFound';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/SignIn" element={<SignIn />} />
+        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      </BrowserRouter>
+
     </div>
   );
 }
